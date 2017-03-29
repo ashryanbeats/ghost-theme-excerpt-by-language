@@ -4,13 +4,16 @@
     <h2>{{title}}</h2>
   </header>
   <section>
-    {{#has tag="English"}}
+
+    {{#has tag="#English"}}
     <p>{{excerpt words="26"}}</p>
     {{else}}
-      {{#has tag="日本語"}}
+      {{#has tag="#日本語"}}
       <p>{{excerpt characters="55"}}</p>
       {{/has}}
     {{/has}}
+    <!-- <p>{{excerpt characters="55"}}</p> -->
+    <p>{{tags}}</p>
   </section>
 </article>
 {{/foreach}}
