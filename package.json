@@ -1,0 +1,11 @@
+{
+  "name": "ghost-theme-excerpt-by-language",
+  "version": "1.0.0",
+  "description": "Change the length of the post excerpt based on language tag.",
+  "author": "Ash",
+  "license": "MIT",
+  "keywords": [
+    "ghost",
+    "theme"
+  ]
+}
