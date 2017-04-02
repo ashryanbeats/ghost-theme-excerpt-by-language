@@ -1,11 +1,24 @@
 {
-  "name": "ghost-theme-excerpt-by-language",
+  "name": "Re-Hash theme for Ghost",
   "version": "1.0.0",
-  "description": "Change the length of the post excerpt based on language tag.",
+  "description": "A min-pop theme for Ghost, originally for blog.ashryan.io.",
   "author": "Ash",
   "license": "MIT",
   "keywords": [
     "ghost",
-    "theme"
-  ]
+    "theme",
+    "responsive",
+    "bootstrap"
+  ],
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "homepage": "https://blog.ashryan.io/re-hash-theme-for-ghost",
+  "repository": {
+    "type" : "git",
+    "url" : ""
+  }
 }

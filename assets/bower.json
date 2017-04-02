@@ -1,0 +1,25 @@
+{
+  "name": "ash-theme",
+  "description": "Theme for blog.ashryan.io.",
+  "main": "",
+  "authors": [
+    "Ash"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ghost",
+    "theme"
+  ],
+  "homepage": "https://blog.ashryan.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

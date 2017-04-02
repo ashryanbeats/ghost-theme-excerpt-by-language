@@ -13,17 +13,23 @@
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  {{!-- Styles --}}
+  <link rel="stylesheet" type="text/css" href="{{asset "bower_components/bootstrap/dist/css/bootstrap.min.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
   {{!-- Ghost outputs important style and meta data with this tag --}}
   {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-  <div>
+
+  <div class="container-fluid"> <!-- site container -->
+    {{navigation}}
+
     {{{body}}}
-  </div>
 
-  {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    {{> "footer"}}
 
-  {{ghost_foot}}
+    {{ghost_foot}}
+  </div> <!-- site container -->
 </body>
 </html>

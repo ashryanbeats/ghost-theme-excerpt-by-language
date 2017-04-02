@@ -1,21 +1,29 @@
 {{#foreach posts}}
-<article>
-  <header>
-    <h2>{{title}}</h2>
-  </header>
-  <section>
+  <article class="{{post_class}}">
+    <header>
+  	   <h2><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
+       <p class="nth-taxonomy">
+         <time datetime="{{date format="YYYY-MM-DD"}}">
+           Posted on {{date format="dddd, MMMM D, YYYY"}}
+         </time>
+         {{tags prefix=" in "}}
+       </p>
+    </header>
 
-    {{#has tag="#English"}}
-    <p>{{excerpt words="26"}}</p>
-    {{else}}
-      {{#has tag="#日本語"}}
-      <p>{{excerpt characters="55"}}</p>
+  	<section>
+      {{#has tag="#English"}}
+        <p>{{excerpt words="26"}}
       {{else}}
-      <p>{{excerpt characters="11"}}</p>
+        {{#has tag="#日本語"}}
+          <p>{{excerpt characters="55"}}
+        {{else}}
+          <p>{{excerpt words="26"}}
+        {{/has}}
+        <a class="read-more" href="{{url}}">&raquo;</a></p>
       {{/has}}
-    {{/has}}
-    <!-- <p>{{excerpt characters="55"}}</p> -->
-    <p>{{tags}}</p>
-  </section>
-</article>
+    </section>
+  </article>
 {{/foreach}}
+
+{{!-- Previous/next page links - displayed on every page --}}
+{{pagination}}

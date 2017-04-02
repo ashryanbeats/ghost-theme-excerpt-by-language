@@ -1,0 +1,35 @@
+@import '../utilities/variables';
+
+footer {
+	min-height: $footer-min-height;
+
+	li {
+		list-style: none;
+	}
+
+	.row {
+		&.footer-widgets {
+			padding-bottom: 25px;
+		}
+	}
+
+	.footer-widget-area {
+		color: $darkest-gray;
+		background-color: $gray;
+		padding-top: 25px;
+	}
+
+	.footer-copyright-area {
+		color: $dark-gray;
+		background-color: $darkest-gray;
+		padding: 25px 0;
+
+		@media (max-width: 991px) {
+			text-align: center;
+		}
+
+		a {
+			color: $orange;
+		}
+	}
+}

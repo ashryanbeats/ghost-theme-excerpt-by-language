@@ -1,0 +1,11 @@
+@import '../utilities/mixins';
+
+.excerpts {
+	p {
+		color: black;
+	}
+
+	article + article:before {
+	    @include hr-like-content;
+	}
+}

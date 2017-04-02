@@ -1,0 +1,14 @@
+@mixin hr {
+	width: 50%;
+	border-color: gray;
+	background: gray;
+}
+
+@mixin hr-like-content {
+	content: "";
+    display: block;
+    margin: 20px auto 50px auto;
+    height: 1px;
+    
+    @include hr;
+}
