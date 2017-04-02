@@ -1,2 +1,23 @@
+{{!< default}}
+
 {{#post}}
+<main role="main" class="container content-container">
+  <div class="row">
+    <div class="col-sm-9 col-md-10 col-lg-9 single full-width-featured-images">
+      <article class="{{post_class}}">
+        <header>
+      	   <h1><a href="{{url}}" title="{{title}}">{{title}}</a></h1>
+           <p class="nth-taxonomy">
+             <time datetime="{{date format="YYYY-MM-DD"}}">
+               Posted on {{date format="dddd, MMMM D, YYYY"}}
+             </time>
+             {{tags prefix=" in "}}
+           </p>
+        </header>
+
+        <section>{{content}}</section>
+      </article>
+    </div>
+  </div>
+</main>
 {{/post}}
