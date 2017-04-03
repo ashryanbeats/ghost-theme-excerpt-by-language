@@ -1,4 +1,29 @@
 <footer>
+  <div class="footer-widget-area">
+    <div class="container"> <!-- footer content container -->
+      <div class="row footer-widgets"> <!-- footer widget row -->
+
+        <div class="col-sm-6 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+          <aside class="widget">
+            <h3>Find me elsewhere:</h3>
+            <ul>
+              <li><a href="https://github.com/ashryanbeats">GitHub</a></li>
+              <li><a href="http://www.twitter.com/ashryanbeats">Twitter</a></li>
+              <li><a href="http://www.soundcloud.com/ashryanbeats">Soundcloud</a></li>
+              <li><a href="https://www.instagram.com/ashryan.io/">Instagram</a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="col-sm-6 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+          <aside class="widget">
+            <h3>RSS</h3>
+              <p><a href="{{@blog.url}}/rss/">Subscribe via RSS</a></p>
+          </aside>
+        </div>
+      </div> <!-- footer widget row -->
+    </div> <!-- footer widget container -->
+  </div> <!-- footer widget area -->
+
   <div class="footer-copyright-area">
     <div class="container">
       <div class="row copyright"> <!-- copyright widget row -->
@@ -10,3 +35,26 @@
     </div>
   </div> <!-- footer copyright area -->
 </footer>
+
+
+<!-- register_sidebar (array(
+    'name' => __('Footer Widget Area 1', 'nth-child'),
+    'id' => 'footer1',
+    'description' => __('Appears in the footer section of the site. Takes up the full width of the footer area. If Footer Widget Area 2 is being used, both areas will take up half of the footer each. On smaller screens, if both footers are active, Footer Widget Area 1 will stack on top of Footer Widget Area 2.', 'nth-child'),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+    )
+);
+
+register_sidebar (array(
+    'name' => __('Footer Widget Area 2', 'nth-child'),
+    'id' => 'footer2',
+    'description' => __('Appears in the footer section of the site. If Footer Widget Area 2 is being used, it will split the footer area with Footer Widget Area 1. On smaller screens, if both footers are active, Footer Widget Area 1 will stack on top of Footer Widget Area 2. NOTE: This widget area will only show if Footer Widget Area 1 is active.', 'nth-child'),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+    )
+); -->

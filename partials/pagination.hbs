@@ -1,0 +1,12 @@
+<nav class="pagination rehash-pagination text-center" role="navigation">
+    {{#if prev}}
+        <a class="newer-posts" href="{{page_url prev}}">&laquo; Newer Posts</a>
+        {{#if next}}
+        <span>&mdash;</span>
+        {{/if}}
+    {{/if}}
+    {{#if next}}
+        <a class="older-posts" href="{{page_url next}}">Older Posts &raquo;</a>
+    {{/if}}
+    <!-- <?php nth_get_the_archives_link() ?> -->
+</nav>

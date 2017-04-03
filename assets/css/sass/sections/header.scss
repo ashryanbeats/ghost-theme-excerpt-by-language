@@ -22,7 +22,7 @@
 		}
 	}
 
-	.menu-item {
+	.nav-item {
 		background-color: $gray;
 		border-radius: 2px;
 		margin: 0 4px 0 2px;
@@ -35,7 +35,7 @@
 			}
 		}
 
-		&.current-menu-item {
+		&.current-nav-item {
 			background-color: $dark-gray;
 
 			& a {

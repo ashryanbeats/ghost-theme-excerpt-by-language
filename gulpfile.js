@@ -10,7 +10,7 @@ gulp.task("default", () => {
 
 	gulp.watch(["*", "!./asset/css/**/*"], ["reload"]);
 
-	gulp.watch(["assets/css/sass/*"], ["buildCSS", "reload"]);
+	gulp.watch(["assets/css/sass/**/*"], ["buildCSS", "reload"]);
 });
 
 gulp.task("buildCSS", () => {

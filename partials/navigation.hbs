@@ -6,7 +6,7 @@
 
     <ul class="nav navbar-nav">
       {{#foreach navigation}}
-        <li class="nav-{{slug}}{{#if current}} active{{/if}}">
+        <li class="nav-item nav-{{slug}}{{#if current}} active current-nav-item{{/if}}">
           <a href="{{url absolute="true"}}">{{label}}</a>
         </li>
       {{/foreach}}
